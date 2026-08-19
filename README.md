@@ -1,75 +1,46 @@
-# Landing Page PontoCam
+# Landing page PontoCam
 
-Landing page comercial e responsiva criada para o lançamento da PontoCam, utilizando Bootstrap 5, CSS personalizado e JavaScript puro.
+Landing page estática, responsiva e pronta para GitHub Pages.
 
 ## Estrutura
 
+- `index.html`: página principal.
+- `assets/css/style.css`: identidade visual e responsividade.
+- `assets/js/main.js`: animações, simulador de valores e formulário por e-mail.
+- `assets/img/`: logotipo, imagem original da PontoCam Light e imagem para compartilhamento.
+- `assets/docs/`: ficha técnica, FAQ e material técnico completo em PDF.
+
+## Publicação no GitHub Pages
+
+1. Envie todo o conteúdo desta pasta para a raiz do repositório.
+2. Em **Settings > Pages**, escolha **Deploy from a branch**.
+3. Selecione a branch principal e a pasta `/root`.
+4. Salve e aguarde a publicação.
+
+Todos os caminhos são relativos e funcionam em repositórios publicados dentro de uma subpasta do GitHub Pages.
+
+## Domínio próprio
+
+Depois que a página estiver aprovada, configure `www.pontocam.com.br` no GitHub Pages e crie o arquivo `CNAME` na raiz contendo:
+
 ```text
-pontocam-landing-page/
-├── index.html
-├── robots.txt
-├── sitemap.xml
-├── README.md
-└── assets/
-    ├── css/style.css
-    ├── js/script.js
-    └── img/
-        ├── camera-pontocam-light.png
-        ├── favicon.png
-        ├── logo-pontocam.png
-        ├── logo-pontocam-transparent.png
-        └── og-pontocam.jpg
+www.pontocam.com.br
 ```
 
-## Como visualizar
+## Formulário
 
-Abra o arquivo `index.html` no navegador. Para trabalhar no código, o ideal é usar uma extensão como **Live Server** no VS Code.
+A versão entregue abre o aplicativo de e-mail do visitante com a mensagem pronta para `comercial@realponto.com.br`. Para envio automático sem abrir o e-mail, conecte o formulário a um backend, CRM ou serviço de formulários.
 
-A página utiliza CDN para carregar:
+## Pontos fáceis de alterar
 
-- Bootstrap 5.3.8
-- Bootstrap Icons 1.13.1
-- Fonte Manrope, pelo Google Fonts
+Os preços e a taxa de implantação aparecem no bloco `#planos` do `index.html`. O cálculo automático está no arquivo `assets/js/main.js`.
 
-Por isso, é necessário estar conectado à internet durante a visualização.
+## Versão integrada
 
-## Contatos já configurados
+Esta versão mantém como base o projeto **Landing_Page_PontoCam_Bootstrap** e incorpora do projeto alternativo:
 
-- WhatsApp: `(11) 4126-2929`
-- Link do WhatsApp: `551141262929`
-- E-mail: `comercial@realponto.com.br`
-- Site: `pontocam.com.br`
+- hero inicial completo, com novo texto, painel ilustrado e imagem da câmera;
+- seção **Mais visão. Mais decisão.** no lugar de **Uma visão completa da operação**;
+- seção **Feita para operações em movimento** no lugar de **Para diferentes operações**.
 
-## Funcionamento do formulário
-
-O formulário não precisa de servidor ou banco de dados. Depois que o visitante preenche os campos, o JavaScript monta uma mensagem e abre o atendimento comercial diretamente no WhatsApp.
-
-O número do WhatsApp está configurado em dois pontos:
-
-1. Nos links do arquivo `index.html`.
-2. Na variável `whatsappUrl`, dentro de `assets/js/script.js`.
-
-## Personalização rápida
-
-As cores principais ficam no início do arquivo `assets/css/style.css`, dentro de `:root`:
-
-```css
---pc-navy-950: #04132d;
---pc-navy-900: #071d3f;
---pc-blue-700: #0b438e;
---pc-blue-500: #1e6bd6;
---pc-red: #ff1b2d;
-```
-
-## Publicação
-
-A pasta pode ser publicada diretamente em serviços como GitHub Pages, Netlify ou hospedagem convencional. Mantenha a estrutura de pastas para não quebrar os caminhos das imagens, do CSS e do JavaScript.
-
-Antes da publicação definitiva, confirme se o domínio final será exatamente `https://pontocam.com.br/`. Caso seja diferente, atualize no `index.html`:
-
-- `canonical`
-- `og:url`
-- `og:image`
-- JSON-LD
-
-Também atualize o endereço no arquivo `sitemap.xml`.
+Os estilos importados ficam isolados em `assets/css/imported-sections.css` para não alterar as demais seções do site.

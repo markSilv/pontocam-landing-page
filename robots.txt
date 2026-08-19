@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pontocam.com.br/sitemap.xml
+Sitemap: https://www.pontocam.com.br/sitemap.xml

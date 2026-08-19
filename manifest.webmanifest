@@ -1,0 +1,11 @@
+{
+  "name": "PontoCam",
+  "short_name": "PontoCam",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061a40",
+  "theme_color": "#061a40",
+  "icons": [
+    {"src":"assets/img/favicon-pontocam.png","sizes":"175x194","type":"image/png"}
+  ]
+}

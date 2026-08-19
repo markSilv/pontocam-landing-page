@@ -1,570 +1,460 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>PontoCam | Monitoramento Veicular e Videotelemetria</title>
-  <meta name="description" content="PontoCam une câmera veicular inteligente, conectividade 4G e plataforma de videotelemetria para acompanhar sua frota em tempo real.">
-  <meta name="theme-color" content="#071d3f">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://pontocam.com.br/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="PontoCam | Sua frota ao vivo. Seus riscos sob controle.">
-  <meta property="og:description" content="Câmera veicular inteligente e plataforma de videotelemetria para acompanhar, proteger e gerenciar sua operação.">
-  <meta property="og:url" content="https://pontocam.com.br/">
-  <meta property="og:image" content="https://pontocam.com.br/assets/img/og-pontocam.jpg">
-
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#061a40" name="theme-color"/>
+<meta content="PontoCam: videotelemetria para frotas com câmera dupla, inteligência artificial, monitoramento ao vivo, alertas e gestão de ocorrências." name="description"/>
+<meta content="videotelemetria, câmera veicular para frotas, monitoramento veicular com câmera, dash cam empresarial, ADAS, DMS, gestão de frotas" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.pontocam.com.br/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="PontoCam | Videotelemetria para frotas" property="og:title"/>
+<meta content="Mais segurança para quem dirige. Mais controle para quem gerencia." property="og:description"/>
+<meta content="https://www.pontocam.com.br/" property="og:url"/>
+<meta content="https://www.pontocam.com.br/assets/img/og-pontocam.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<title>PontoCam | Videotelemetria e câmera veicular para frotas</title>
+<link href="assets/img/favicon-pontocam.png" rel="icon" type="image/png"/>
+<link href="assets/vendor/bootstrap-fallback.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/><link href="assets/css/style.css" rel="stylesheet"/><link href="assets/css/imported-sections.css" rel="stylesheet"/>
+<script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "PontoCam",
-    "serviceType": "Monitoramento veicular e videotelemetria",
-    "url": "https://pontocam.com.br/",
-    "description": "Solução de monitoramento veicular que combina câmera inteligente, conectividade 4G e plataforma de gestão.",
-    "areaServed": "BR",
-    "provider": {
-      "@type": "Organization",
-      "name": "Grupo RealPonto",
-      "url": "https://realponto.com.br/",
-      "email": "comercial@realponto.com.br",
-      "telephone": "+55-11-4126-2929"
-    }
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"PontoCam - Monitoramento Veicular e Telemetria",
+    "provider":{"@type":"Organization","name":"Grupo RealPonto","url":"https://www.pontocam.com.br/"},
+    "serviceType":"Videotelemetria e monitoramento veicular para frotas",
+    "areaServed":"BR",
+    "description":"Solução de videotelemetria com câmera dupla, inteligência artificial, transmissão ao vivo, gravações, alertas e gestão de ocorrências.",
+    "offers":{"@type":"OfferCatalog","name":"Planos PontoCam","itemListElement":[
+      {"@type":"Offer","name":"PontoCam Essencial 5 GB","price":"167.90","priceCurrency":"BRL"},
+      {"@type":"Offer","name":"PontoCam Profissional 10 GB","price":"197.90","priceCurrency":"BRL"}
+    ]}
   }
   </script>
 </head>
-
 <body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-
-  <header class="site-header fixed-top" id="siteHeader">
-    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
-      <div class="container">
-        <a class="navbar-brand brand-card" href="#inicio" aria-label="PontoCam - início">
-          <img src="assets/img/logo-pontocam.png" alt="PontoCam - Monitoramento Veicular e Telemetria" width="562" height="180">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link" href="#solucao">A solução</a></li>
-            <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#aplicacoes">Aplicações</a></li>
-            <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
-          </ul>
-
-          <a class="btn btn-pontocam ms-lg-3 mt-3 mt-lg-0" href="#contato">
-            Quero uma demonstração
-            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="hero-grid-lines" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-
-      <div class="container position-relative hero-container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 hero-copy reveal">
-            <div class="eyebrow">
-              <span class="pulse-dot" aria-hidden="true"></span>
+<svg aria-hidden="true" class="svg-library"><defs>
+<symbol id="icon-live" viewbox="0 0 24 24"><rect height="14" rx="2" width="13" x="3" y="5"></rect><path d="M16 10l5-3v10l-5-3z"></path></symbol>
+<symbol id="icon-playback" viewbox="0 0 24 24"><path d="M4 12a8 8 0 108-8 8.6 8.6 0 00-6 2.5L3 9"></path><path d="M3 4v5h5M10 8l6 4-6 4z"></path></symbol>
+<symbol id="icon-download" viewbox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></symbol>
+<symbol id="icon-road" viewbox="0 0 24 24"><path d="M8 2L4 22M16 2l4 20M12 3v4M12 10v4M12 17v4"></path></symbol>
+<symbol id="icon-driver" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3"></circle><path d="M5 21c1-5 3.5-7 7-7s6 2 7 7M4 4l3 2M20 4l-3 2"></path></symbol>
+<symbol id="icon-alert" viewbox="0 0 24 24"><path d="M18 8a6 6 0 00-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M9 21h6"></path></symbol>
+<symbol id="icon-map" viewbox="0 0 24 24"><path d="M8 4l8-2 5 3v15l-5-3-8 2-5-3V1zM8 4v15M16 2v15"></path></symbol>
+<symbol id="icon-users" viewbox="0 0 24 24"><circle cx="8" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 21c1-5 3-7 6-7s5 2 6 7M14 15c4 0 6 2 7 6"></path></symbol>
+<symbol id="icon-camera" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="6"></rect><circle cx="12" cy="12.5" r="3.5"></circle><path d="M8 6l1.5-3h5L16 6"></path></symbol>
+<symbol id="icon-chip" viewbox="0 0 24 24"><rect height="12" rx="2" width="12" x="6" y="6"></rect><path d="M9 1v5M15 1v5M9 18v5M15 18v5M1 9h5M1 15h5M18 9h5M18 15h5"></path></symbol>
+<symbol id="icon-platform" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="4"></rect><path d="M8 21h8M12 17v4M7 13l3-3 2 2 5-5"></path></symbol>
+<symbol id="icon-check" viewbox="0 0 24 24"><path d="M5 12l4 4L19 6"></path></symbol>
+<symbol id="icon-phone" viewbox="0 0 24 24"><path d="M6 2h4l2 5-3 2c1.5 3 3.5 5 6 6l2-3 5 2v4c0 2-2 4-4 4C10 21 3 14 2 6c0-2 2-4 4-4z"></path></symbol>
+<symbol id="icon-mail" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="M3 6l9 7 9-7"></path></symbol>
+<symbol id="icon-arrow" viewbox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"></path></symbol>
+</defs></svg>
+<nav aria-label="Navegação principal" class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<div class="container">
+<a aria-label="PontoCam - início" class="navbar-brand" href="#inicio">
+<span class="brand-pill"><img alt="PontoCam" src="assets/img/logo-pontocam.png"/></span>
+</a>
+<button aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menu" class="navbar-toggler" data-bs-target="#navbarMenu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarMenu">
+<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+<li class="nav-item"><a class="nav-link" href="#solucao">Solução</a></li>
+<li class="nav-item"><a class="nav-link" href="#plataforma">Plataforma</a></li>
+<li class="nav-item"><a class="nav-link" href="#camera">Câmera</a></li>
+<li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+<li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+<li class="nav-item ms-lg-2"><a class="btn btn-brand btn-sm px-4" href="#contato">Solicitar demonstração</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<main>
+<div class="source-design"><section class="alt-hero" id="inicio">
+<div aria-hidden="true" class="alt-hero-grid-lines"></div>
+<div aria-hidden="true" class="alt-hero-glow alt-hero-glow-one"></div>
+<div aria-hidden="true" class="alt-hero-glow alt-hero-glow-two"></div>
+<div class="container position-relative alt-hero-container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6 alt-hero-copy reveal">
+<div class="alt-eyebrow">
+<span aria-hidden="true" class="alt-pulse-dot"></span>
               Lançamento do Grupo RealPonto
             </div>
-
-            <h1>Sua frota ao vivo.<br><span>Seus riscos sob controle.</span></h1>
-
-            <p class="hero-lead">
+<h1>Sua frota ao vivo.<br/><span>Seus riscos sob controle.</span></h1>
+<p class="alt-hero-lead">
               Câmera veicular inteligente e plataforma PontoCam para ver, localizar e agir em tempo real.
             </p>
-
-            <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
-              <a class="btn btn-pontocam btn-lg" href="#contato">
+<div class="alt-hero-actions d-flex flex-column flex-sm-row gap-3">
+<a class="btn alt-btn-pontocam btn-lg" href="#contato">
                 Conhecer a PontoCam
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </a>
-              <a class="btn btn-outline-light btn-lg btn-ghost" href="#solucao">
+                <i aria-hidden="true" class="bi bi-arrow-right"></i>
+</a>
+<a class="btn btn-outline-light btn-lg alt-btn-ghost" href="#solucao">
                 Ver como funciona
-                <i class="bi bi-play-circle" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="hero-proof" aria-label="Principais tecnologias">
-              <span><i class="bi bi-camera-video-fill" aria-hidden="true"></i> Câmera dupla</span>
-              <span><i class="bi bi-broadcast-pin" aria-hidden="true"></i> 4G</span>
-              <span><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> GPS</span>
-              <span><i class="bi bi-stars" aria-hidden="true"></i> IA embarcada</span>
-            </div>
-          </div>
-
-          <div class="col-lg-6 reveal reveal-delay-1">
-            <div class="hero-visual" aria-label="Representação da câmera e plataforma PontoCam">
-              <div class="platform-window">
-                <div class="platform-header">
-                  <div class="platform-title">
-                    <span class="live-dot" aria-hidden="true"></span>
+                <i aria-hidden="true" class="bi bi-play-circle"></i>
+</a>
+</div>
+<div aria-label="Principais tecnologias" class="alt-hero-proof">
+<span><i aria-hidden="true" class="bi bi-camera-video-fill"></i> Câmera dupla</span>
+<span><i aria-hidden="true" class="bi bi-broadcast-pin"></i> 4G</span>
+<span><i aria-hidden="true" class="bi bi-geo-alt-fill"></i> GPS</span>
+<span><i aria-hidden="true" class="bi bi-stars"></i> IA embarcada</span>
+</div>
+</div>
+<div class="col-lg-6 reveal reveal-delay-1">
+<div aria-label="Representação da câmera e plataforma PontoCam" class="alt-hero-visual">
+<div class="alt-platform-window">
+<div class="alt-platform-header">
+<div class="alt-platform-title">
+<span aria-hidden="true" class="alt-live-dot"></span>
                     Operação em tempo real
                   </div>
-                  <div class="platform-status">12 veículos online</div>
-                </div>
-
-                <div class="platform-layout">
-                  <div class="platform-sidebar" aria-hidden="true">
-                    <span class="active"><i class="bi bi-grid-1x2-fill"></i></span>
-                    <span><i class="bi bi-geo-alt"></i></span>
-                    <span><i class="bi bi-camera-video"></i></span>
-                    <span><i class="bi bi-bell"></i></span>
-                  </div>
-
-                  <div class="platform-content">
-                    <div class="map-card">
-                      <div class="map-label">Frota ativa</div>
-                      <svg class="route-map" viewBox="0 0 560 270" role="img" aria-label="Trajeto ilustrativo de um veículo">
-                        <defs>
-                          <linearGradient id="routeGradient" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#2b78e4" />
-                            <stop offset="100%" stop-color="#ff1b2d" />
-                          </linearGradient>
-                        </defs>
-                        <path class="map-road" d="M-10 54 C95 112 107 16 207 54 S330 160 441 92 535 44 580 76" />
-                        <path class="map-road map-road-two" d="M72 292 C105 196 223 218 258 136 S387 16 460 -20" />
-                        <path class="map-route" d="M56 206 C126 158 204 226 269 151 S382 76 495 96" />
-                        <circle class="route-point" cx="56" cy="206" r="7" />
-                        <circle class="route-point route-point-end" cx="495" cy="96" r="9" />
-                      </svg>
-
-                      <div class="vehicle-marker">
-                        <i class="bi bi-truck-front-fill" aria-hidden="true"></i>
-                      </div>
-
-                      <div class="vehicle-card">
-                        <strong>Veículo RP-08</strong>
-                        <span><i class="bi bi-speedometer2" aria-hidden="true"></i> 48 km/h</span>
-                        <span><i class="bi bi-reception-4" aria-hidden="true"></i> 4G estável</span>
-                      </div>
-                    </div>
-
-                    <div class="video-panels">
-                      <div class="video-panel road-feed">
-                        <div class="feed-top">
-                          <span><i class="bi bi-record-circle-fill" aria-hidden="true"></i> VIA</span>
-                          <small>AO VIVO</small>
-                        </div>
-                        <div class="road-illustration" aria-hidden="true">
-                          <span class="lane lane-one"></span>
-                          <span class="lane lane-two"></span>
-                          <span class="lane lane-three"></span>
-                        </div>
-                      </div>
-
-                      <div class="video-panel cabin-feed">
-                        <div class="feed-top">
-                          <span><i class="bi bi-record-circle-fill" aria-hidden="true"></i> CABINE</span>
-                          <small>IR</small>
-                        </div>
-                        <div class="driver-illustration" aria-hidden="true">
-                          <span class="driver-head"></span>
-                          <span class="driver-body"></span>
-                          <span class="steering-wheel"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="camera-orbit" aria-hidden="true"></div>
-              <div class="camera-glow" aria-hidden="true"></div>
-              <img class="hero-camera" src="assets/img/camera-pontocam-light.png" alt="Câmera veicular PontoCam Light" width="788" height="850">
-
-              <div class="floating-alert alert-live">
-                <span class="alert-icon"><i class="bi bi-broadcast" aria-hidden="true"></i></span>
-                <span><strong>Ao vivo</strong><small>Vídeo e localização</small></span>
-              </div>
-
-              <div class="floating-alert alert-risk">
-                <span class="alert-icon danger"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i></span>
-                <span><strong>Alerta DMS</strong><small>Uso de celular</small></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-bottom-line" aria-hidden="true"></div>
-    </section>
-
-    <section class="solution-strip" id="solucao">
-      <div class="container">
-        <div class="section-heading text-center reveal">
-          <span class="section-kicker">Solução completa</span>
-          <h2>Uma câmera. Uma plataforma.<br>Uma operação mais segura.</h2>
-        </div>
-
-        <div class="row g-4 mt-2">
-          <div class="col-md-4 reveal">
-            <article class="solution-step h-100">
-              <span class="step-number">01</span>
-              <div class="step-icon"><i class="bi bi-camera-video-fill" aria-hidden="true"></i></div>
-              <h3>Câmera PontoCam Light</h3>
-              <p>Visão frontal e cabine em alta definição.</p>
-            </article>
-          </div>
-
-          <div class="col-md-4 reveal reveal-delay-1">
-            <article class="solution-step h-100">
-              <span class="step-number">02</span>
-              <div class="step-icon"><i class="bi bi-reception-4" aria-hidden="true"></i></div>
-              <h3>Conectividade 4G</h3>
-              <p>Imagens, alertas e localização em tempo real.</p>
-            </article>
-          </div>
-
-          <div class="col-md-4 reveal reveal-delay-2">
-            <article class="solution-step h-100">
-              <span class="step-number">03</span>
-              <div class="step-icon"><i class="bi bi-window-stack" aria-hidden="true"></i></div>
-              <h3>Plataforma PontoCam</h3>
-              <p>Gestão centralizada, histórico e evidências.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="solution-cta reveal">
-          <span>Veja. Acompanhe. Gerencie.</span>
-          <a href="#contato">Quero levar para minha frota <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="features-section" id="recursos">
-      <div class="container">
-        <div class="row align-items-end g-4 mb-5">
-          <div class="col-lg-7 reveal">
-            <span class="section-kicker section-kicker-light">Mais visão. Mais decisão.</span>
-            <h2>O que importa,<br>na hora em que acontece.</h2>
-          </div>
-          <div class="col-lg-5 reveal reveal-delay-1">
-            <p class="section-intro">Recursos essenciais para proteger motoristas, veículos e a operação.</p>
-          </div>
-        </div>
-
-        <div class="row g-3 feature-grid">
-          <div class="col-6 col-lg-4 reveal">
-            <article class="feature-tile">
-              <i class="bi bi-camera-reels" aria-hidden="true"></i>
-              <h3>Transmissão ao vivo</h3>
-              <span>Via e cabine</span>
-            </article>
-          </div>
-
-          <div class="col-6 col-lg-4 reveal reveal-delay-1">
-            <article class="feature-tile">
-              <i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <h3>GPS e trajetos</h3>
-              <span>Localização centralizada</span>
-            </article>
-          </div>
-
-          <div class="col-6 col-lg-4 reveal reveal-delay-2">
-            <article class="feature-tile">
-              <i class="bi bi-person-exclamation" aria-hidden="true"></i>
-              <h3>Alertas DMS</h3>
-              <span>Fadiga, celular e distração</span>
-            </article>
-          </div>
-
-          <div class="col-6 col-lg-4 reveal">
-            <article class="feature-tile">
-              <i class="bi bi-sign-turn-slight-right" aria-hidden="true"></i>
-              <h3>Alertas ADAS</h3>
-              <span>Faixa e risco de colisão</span>
-            </article>
-          </div>
-
-          <div class="col-6 col-lg-4 reveal reveal-delay-1">
-            <article class="feature-tile">
-              <i class="bi bi-cloud-arrow-down" aria-hidden="true"></i>
-              <h3>Evidências em vídeo</h3>
-              <span>Playback e download</span>
-            </article>
-          </div>
-
-          <div class="col-6 col-lg-4 reveal reveal-delay-2">
-            <article class="feature-tile feature-tile-red">
-              <i class="bi bi-shield-exclamation" aria-hidden="true"></i>
-              <h3>Botão SOS</h3>
-              <span>Resposta em situações críticas</span>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="intelligence-section">
-      <div class="container">
-        <div class="intelligence-panel">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 reveal">
-              <div class="camera-showcase">
-                <div class="showcase-ring ring-one" aria-hidden="true"></div>
-                <div class="showcase-ring ring-two" aria-hidden="true"></div>
-                <span class="showcase-tag tag-4g"><i class="bi bi-reception-4"></i> 4G</span>
-                <span class="showcase-tag tag-gps"><i class="bi bi-geo-alt-fill"></i> GPS</span>
-                <span class="showcase-tag tag-fullhd"><i class="bi bi-badge-hd-fill"></i> Full HD</span>
-                <img src="assets/img/camera-pontocam-light.png" alt="Detalhe da câmera veicular PontoCam Light" loading="lazy" width="788" height="850">
-              </div>
-            </div>
-
-            <div class="col-lg-6 reveal reveal-delay-1">
-              <span class="section-kicker">Inteligência embarcada</span>
-              <h2>Identifique riscos antes que virem problemas.</h2>
-
-              <div class="risk-list">
-                <div class="risk-item">
-                  <span>DMS</span>
-                  <div>
-                    <strong>Proteção do motorista</strong>
-                    <small>Fadiga • distração • uso de celular</small>
-                  </div>
-                </div>
-
-                <div class="risk-item">
-                  <span>ADAS</span>
-                  <div>
-                    <strong>Assistência na condução</strong>
-                    <small>Colisão • distância • saída de faixa</small>
-                  </div>
-                </div>
-              </div>
-
-              <a class="text-link" href="#contato">Agendar uma apresentação <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="applications-section" id="aplicacoes">
-      <div class="container">
-        <div class="section-heading text-center reveal">
-          <span class="section-kicker">Feita para operações em movimento</span>
-          <h2>Onde a PontoCam faz diferença</h2>
-        </div>
-
-        <div class="applications-grid mt-5">
-          <article class="application-card reveal">
-            <span class="application-icon"><i class="bi bi-box-seam"></i></span>
-            <h3>Entregas e logística</h3>
-            <p>Mais evidência e controle em cada rota.</p>
-          </article>
-
-          <article class="application-card reveal reveal-delay-1">
-            <span class="application-icon"><i class="bi bi-wrench-adjustable"></i></span>
-            <h3>Equipes externas</h3>
-            <p>Acompanhe deslocamentos e atendimentos.</p>
-          </article>
-
-          <article class="application-card reveal reveal-delay-2">
-            <span class="application-icon"><i class="bi bi-people"></i></span>
-            <h3>Transporte de passageiros</h3>
-            <p>Mais segurança dentro e fora do veículo.</p>
-          </article>
-
-          <article class="application-card reveal reveal-delay-3">
-            <span class="application-icon"><i class="bi bi-buildings"></i></span>
-            <h3>Frotas corporativas</h3>
-            <p>Gestão simples para veículos da empresa.</p>
-          </article>
-        </div>
-
-        <div class="numbers-bar reveal">
-          <div><strong>2</strong><span>câmeras integradas</span></div>
-          <div><strong>4G</strong><span>conectividade móvel</span></div>
-          <div><strong>1</strong><span>plataforma central</span></div>
-          <div><strong>24h</strong><span>operação acompanhada</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contato">
-      <div class="contact-grid" aria-hidden="true"></div>
-      <div class="container position-relative">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-5 reveal">
-            <span class="section-kicker section-kicker-light">Pronto para enxergar mais?</span>
-            <h2>Sua frota já está na rua. Entre na operação com a PontoCam.</h2>
-            <p>Preencha os dados e fale com nossa equipe comercial.</p>
-
-            <div class="contact-links">
-              <a href="tel:+551141262929"><i class="bi bi-telephone-fill"></i> (11) 4126-2929</a>
-              <a href="mailto:comercial@realponto.com.br"><i class="bi bi-envelope-fill"></i> comercial@realponto.com.br</a>
-              <a href="https://pontocam.com.br"><i class="bi bi-globe2"></i> pontocam.com.br</a>
-            </div>
-          </div>
-
-          <div class="col-lg-7 reveal reveal-delay-1">
-            <div class="lead-form-card">
-              <div class="form-heading">
-                <span>Solicite uma demonstração</span>
-                <small>Retorno da equipe PontoCam</small>
-              </div>
-
-              <form id="leadForm" class="needs-validation" novalidate>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="nome">Nome</label>
-                    <input class="form-control" id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
-                    <div class="invalid-feedback">Informe seu nome.</div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label" for="empresa">Empresa</label>
-                    <input class="form-control" id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa" required>
-                    <div class="invalid-feedback">Informe a empresa.</div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label" for="telefone">WhatsApp</label>
-                    <input class="form-control" id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" required>
-                    <div class="invalid-feedback">Informe um telefone.</div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label" for="frota">Tamanho da frota</label>
-                    <select class="form-select" id="frota" name="frota" required>
-                      <option value="" selected disabled>Selecione</option>
-                      <option>1 a 5 veículos</option>
-                      <option>6 a 20 veículos</option>
-                      <option>21 a 50 veículos</option>
-                      <option>51 a 100 veículos</option>
-                      <option>Mais de 100 veículos</option>
-                    </select>
-                    <div class="invalid-feedback">Selecione o tamanho da frota.</div>
-                  </div>
-
-                  <div class="col-12">
-                    <button class="btn btn-pontocam btn-lg w-100" type="submit">
-                      Falar com um especialista no WhatsApp!
-                      <i class="bi bi-whatsapp" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-
-                <p class="form-note"><i class="bi bi-lock-fill" aria-hidden="true"></i> Seus dados serão usados apenas para este atendimento.</p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section" id="duvidas">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-4 reveal">
-            <span class="section-kicker">Dúvidas rápidas</span>
-            <h2>O essencial antes de começar.</h2>
-          </div>
-
-          <div class="col-lg-8 reveal reveal-delay-1">
-            <div class="accordion accordion-flush" id="faqAccordion">
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
-                    É possível acompanhar as imagens ao vivo?
-                  </button>
-                </h3>
-                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Sim. A plataforma permite visualizar a via e a cabine em tempo real, conforme a conectividade disponível.</div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                    A câmera continua gravando sem sinal 4G?
-                  </button>
-                </h3>
-                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Com cartão de memória instalado, a gravação local continua. A transmissão e a sincronização dependem da conexão.</div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                    Quais riscos a inteligência identifica?
-                  </button>
-                </h3>
-                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Fadiga, distração, uso de celular, saída de faixa e risco de colisão, entre outros eventos configurados.</div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                    Para quais tipos de frota a solução é indicada?
-                  </button>
-                </h3>
-                <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">Carros, utilitários, vans, VUCs e caminhões leves em operações corporativas, técnicas, logísticas e de transporte.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-main">
-        <a class="footer-brand" href="#inicio">
-          <img src="assets/img/logo-pontocam.png" alt="PontoCam" loading="lazy" width="562" height="180">
-        </a>
-
-        <p>Monitoramento veicular e videotelemetria.<br>Uma empresa do Grupo RealPonto.</p>
-
-        <a class="footer-cta" href="https://wa.me/551141262929?text=Ol%C3%A1%2C%20conheci%20a%20PontoCam%20pela%20landing%20page%20e%20gostaria%20de%20receber%20uma%20demonstra%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">
-          Fale com a PontoCam <i class="bi bi-whatsapp"></i>
-        </a>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© <span id="currentYear"></span> PontoCam. Todos os direitos reservados.</span>
-        <span>pontocam.com.br</span>
-      </div>
-    </div>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/551141262929?text=Ol%C3%A1%2C%20conheci%20a%20PontoCam%20pela%20landing%20page%20e%20gostaria%20de%20receber%20uma%20demonstra%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" aria-label="Falar com a PontoCam pelo WhatsApp">
-    <i class="bi bi-whatsapp" aria-hidden="true"></i>
-    <span>Fale conosco</span>
-  </a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
+<div class="alt-platform-status">12 veículos online</div>
+</div>
+<div class="alt-platform-layout">
+<div aria-hidden="true" class="alt-platform-sidebar">
+<span class="alt-active"><i class="bi bi-grid-1x2-fill"></i></span>
+<span><i class="bi bi-geo-alt"></i></span>
+<span><i class="bi bi-camera-video"></i></span>
+<span><i class="bi bi-bell"></i></span>
+</div>
+<div class="alt-platform-content">
+<div class="alt-map-card">
+<div class="alt-map-label">Frota ativa</div>
+<svg aria-label="Trajeto ilustrativo de um veículo" class="alt-route-map" role="img" viewbox="0 0 560 270">
+<defs>
+<lineargradient id="routeGradient" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#2b78e4"></stop>
+<stop offset="100%" stop-color="#ff1b2d"></stop>
+</lineargradient>
+</defs>
+<path class="alt-map-road" d="M-10 54 C95 112 107 16 207 54 S330 160 441 92 535 44 580 76"></path>
+<path class="alt-map-road alt-map-road-two" d="M72 292 C105 196 223 218 258 136 S387 16 460 -20"></path>
+<path class="alt-map-route" d="M56 206 C126 158 204 226 269 151 S382 76 495 96"></path>
+<circle class="alt-route-point" cx="56" cy="206" r="7"></circle>
+<circle class="alt-route-point alt-route-point-end" cx="495" cy="96" r="9"></circle>
+</svg>
+<div class="alt-vehicle-marker">
+<i aria-hidden="true" class="bi bi-truck-front-fill"></i>
+</div>
+<div class="alt-vehicle-card">
+<strong>Veículo RP-08</strong>
+<span><i aria-hidden="true" class="bi bi-speedometer2"></i> 48 km/h</span>
+<span><i aria-hidden="true" class="bi bi-reception-4"></i> 4G estável</span>
+</div>
+</div>
+<div class="alt-video-panels">
+<div class="alt-video-panel alt-road-feed">
+<div class="alt-feed-top">
+<span><i aria-hidden="true" class="bi bi-record-circle-fill"></i> VIA</span>
+<small>AO VIVO</small>
+</div>
+<div aria-hidden="true" class="alt-road-illustration">
+<span class="alt-lane alt-lane-one"></span>
+<span class="alt-lane alt-lane-two"></span>
+<span class="alt-lane alt-lane-three"></span>
+</div>
+</div>
+<div class="alt-video-panel alt-cabin-feed">
+<div class="alt-feed-top">
+<span><i aria-hidden="true" class="bi bi-record-circle-fill"></i> CABINE</span>
+<small>IR</small>
+</div>
+<div aria-hidden="true" class="alt-driver-illustration">
+<span class="alt-driver-head"></span>
+<span class="alt-driver-body"></span>
+<span class="alt-steering-wheel"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="alt-camera-orbit"></div>
+<div aria-hidden="true" class="alt-camera-glow"></div>
+<img alt="Câmera veicular PontoCam Light" class="alt-hero-camera" height="850" src="assets/img/camera-pontocam-light.png" width="788"/>
+<div class="alt-floating-alert alt-alert-live">
+<span class="alt-alert-icon"><i aria-hidden="true" class="bi bi-broadcast"></i></span>
+<span><strong>Ao vivo</strong><small>Vídeo e localização</small></span>
+</div>
+<div class="alt-floating-alert alt-alert-risk">
+<span class="alt-alert-icon alt-danger"><i aria-hidden="true" class="bi bi-exclamation-triangle-fill"></i></span>
+<span><strong>Alerta DMS</strong><small>Uso de celular</small></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="alt-hero-bottom-line"></div>
+</section></div>
+<section aria-label="Benefícios principais" class="trust-strip">
+<div class="container">
+<div class="row g-0 text-center">
+<div class="col-6 col-lg-3"><span>01</span><b>Mais prevenção</b></div>
+<div class="col-6 col-lg-3"><span>02</span><b>Evidências em vídeo</b></div>
+<div class="col-6 col-lg-3"><span>03</span><b>Gestão centralizada</b></div>
+<div class="col-6 col-lg-3"><span>04</span><b>Decisão mais rápida</b></div>
+</div>
+</div>
+</section>
+<div class="source-design"><section class="alt-features-section" id="solucao">
+<div class="container">
+<div class="row align-items-end g-4 mb-5">
+<div class="col-lg-7 reveal">
+<span class="alt-section-kicker alt-section-kicker-light">Mais visão. Mais decisão.</span>
+<h2>O que importa,<br/>na hora em que acontece.</h2>
+</div>
+<div class="col-lg-5 reveal reveal-delay-1">
+<p class="alt-section-intro">Recursos essenciais para proteger motoristas, veículos e a operação.</p>
+</div>
+</div>
+<div class="row g-3 alt-feature-grid">
+<div class="col-6 col-lg-4 reveal">
+<article class="alt-feature-tile">
+<i aria-hidden="true" class="bi bi-camera-reels"></i>
+<h3>Transmissão ao vivo</h3>
+<span>Via e cabine</span>
+</article>
+</div>
+<div class="col-6 col-lg-4 reveal reveal-delay-1">
+<article class="alt-feature-tile">
+<i aria-hidden="true" class="bi bi-geo-alt"></i>
+<h3>GPS e trajetos</h3>
+<span>Localização centralizada</span>
+</article>
+</div>
+<div class="col-6 col-lg-4 reveal reveal-delay-2">
+<article class="alt-feature-tile">
+<i aria-hidden="true" class="bi bi-person-exclamation"></i>
+<h3>Alertas DMS</h3>
+<span>Fadiga, celular e distração</span>
+</article>
+</div>
+<div class="col-6 col-lg-4 reveal">
+<article class="alt-feature-tile">
+<i aria-hidden="true" class="bi bi-sign-turn-slight-right"></i>
+<h3>Alertas ADAS</h3>
+<span>Faixa e risco de colisão</span>
+</article>
+</div>
+<div class="col-6 col-lg-4 reveal reveal-delay-1">
+<article class="alt-feature-tile">
+<i aria-hidden="true" class="bi bi-cloud-arrow-down"></i>
+<h3>Evidências em vídeo</h3>
+<span>Playback e download</span>
+</article>
+</div>
+<div class="col-6 col-lg-4 reveal reveal-delay-2">
+<article class="alt-feature-tile alt-feature-tile-red">
+<i aria-hidden="true" class="bi bi-shield-exclamation"></i>
+<h3>Botão SOS</h3>
+<span>Resposta em situações críticas</span>
+</article>
+</div>
+</div>
+</div>
+</section></div>
+<section class="section-space platform-section" id="plataforma">
+<div class="container">
+<div class="row align-items-center gy-5">
+<div class="col-lg-5 reveal">
+<span class="section-kicker">Plataforma PontoCam</span>
+<h2>Informação organizada para transformar imagens em ação</h2>
+<p class="fs-5">Dashboard, streaming, playback, eventos, rastreamento, cerca eletrônica, ranking de motoristas e controle de acessos em uma experiência centralizada.</p>
+<ul class="platform-list">
+<li><svg><use href="#icon-check"></use></svg>Perfis de acesso personalizados</li>
+<li><svg><use href="#icon-check"></use></svg>Consulta de eventos com vídeo associado</li>
+<li><svg><use href="#icon-check"></use></svg>Monitoramento da frota em um único ambiente</li>
+<li><svg><use href="#icon-check"></use></svg>Interface preparada para português, inglês e espanhol</li>
+</ul>
+<a class="btn btn-dark btn-lg mt-3" href="#contato">Agendar uma apresentação</a>
+</div>
+<div class="col-lg-7 reveal reveal-delay">
+<div class="dashboard-shell">
+<div class="dashboard-top"><div class="dash-brand"><img alt="" src="assets/img/favicon-pontocam.png"/><b>PontoCam</b></div><div class="dash-search"></div><div class="dash-user">GR</div></div>
+<div class="dashboard-body">
+<aside><span class="active"></span><span></span><span></span><span></span><span></span></aside>
+<div class="dash-content">
+<div class="dash-title"><div><small>VISÃO GERAL</small><b>Operação em tempo real</b></div><span>Hoje, 14:32</span></div>
+<div class="metric-row"><div><span>Veículos ativos</span><b>28</b><small>+4 hoje</small></div><div><span>Eventos críticos</span><b class="red">03</b><small>Requer atenção</small></div><div><span>Câmeras online</span><b>96%</b><small>27 de 28</small></div></div>
+<div class="dash-grid">
+<div class="map-card"><div class="map-lines"></div><i class="pin p1"></i><i class="pin p2"></i><i class="pin p3"></i><i class="pin p4"></i><span class="map-label">São Paulo e região</span></div>
+<div class="video-card"><div class="video-sky"></div><div class="road"></div><span class="rec-dot"></span><b>VEÍCULO 018 • AO VIVO</b><small>Frontal</small></div>
+<div class="events-card"><h4>Ocorrências recentes</h4><div><i class="danger"></i><span><b>Fadiga detectada</b><small>Veículo 012 • 14:27</small></span></div><div><i class="warning"></i><span><b>Desvio de faixa</b><small>Veículo 018 • 14:21</small></span></div><div><i class="info"></i><span><b>Câmera reconectada</b><small>Veículo 006 • 14:14</small></span></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-space camera-section" id="camera">
+<div class="container">
+<div class="row align-items-center gy-5">
+<div class="col-lg-6 reveal">
+<div class="product-stage">
+<div class="product-orbit"></div>
+<img alt="PontoCam Light, câmera veicular com câmera frontal e de cabine" src="assets/img/pontocam-light.png"/>
+<div class="spec-chip chip-one"><b>1080p</b><span>Gravação em alta definição</span></div>
+<div class="spec-chip chip-two"><b>2 canais</b><span>Frontal + cabine com IR</span></div>
+<div class="spec-chip chip-three"><b>4G + GPS</b><span>Conectividade e localização</span></div>
+</div>
+</div>
+<div class="col-lg-6 reveal reveal-delay">
+<span class="section-kicker light">PontoCam Light</span>
+<h2 class="text-white">Compacta no para-brisa. Grande no controle da operação.</h2>
+<p class="section-intro text-white-50">A câmera combina dois canais, recursos de inteligência artificial, comunicação 4G, GPS/GNSS, Wi-Fi local, áudio e armazenamento em cartão microSD.</p>
+<div class="spec-list">
+<div><b>ADAS</b><span>Alerta de saída de faixa e risco de colisão frontal</span></div>
+<div><b>DMS</b><span>Fadiga, distração e uso de celular pelo motorista</span></div>
+<div><b>Armazenamento</b><span>Cartão TF/microSD de até 512 GB</span></div>
+<div><b>Operação</b><span>Temperatura de -20 °C a +70 °C e entrada 9-36 V DC</span></div>
+</div>
+<div class="d-flex flex-wrap gap-3 mt-4">
+<a class="btn btn-light btn-lg" href="assets/docs/PontoCam_Light_Datasheet.pdf" rel="noopener" target="_blank">Baixar ficha técnica</a>
+<a class="btn btn-outline-light btn-lg" href="assets/docs/PontoCam_Light_FAQ.pdf" rel="noopener" target="_blank">Ver perguntas frequentes</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-space how-section bg-soft">
+<div class="container">
+<div class="section-heading text-center mx-auto reveal"><span class="section-kicker">Como funciona</span><h2>Da instalação à tomada de decisão em <span>três etapas</span></h2></div>
+<div class="how-line"></div>
+<div class="row g-4 mt-4 position-relative">
+<div class="col-lg-4 reveal"><div class="how-card"><span>01</span><div class="icon-box"><svg><use href="#icon-camera"></use></svg></div><h3>Instalação no veículo</h3><p>A PontoCam Light é instalada e configurada para garantir campo de visão, comunicação, GPS, gravação e calibração da IA.</p></div></div>
+<div class="col-lg-4 reveal"><div class="how-card"><span>02</span><div class="icon-box"><svg><use href="#icon-chip"></use></svg></div><h3>Conexão e envio de dados</h3><p>A solução utiliza 4G para eventos, localização, consultas e visualização ao vivo conforme a franquia contratada.</p></div></div>
+<div class="col-lg-4 reveal"><div class="how-card"><span>03</span><div class="icon-box"><svg><use href="#icon-platform"></use></svg></div><h3>Gestão pela plataforma</h3><p>O gestor acompanha eventos, vídeos, trajetos, alertas e indicadores para agir com mais rapidez e segurança.</p></div></div>
+</div>
+</div>
+</section>
+<section class="section-space plans-section" id="planos">
+<div class="container">
+<div class="section-heading text-center mx-auto reveal"><span class="section-kicker">Planos PontoCam</span><h2>Escolha a franquia que combina com o uso da sua frota</h2><p>A câmera, a plataforma e o plano de dados fazem parte da mensalidade. A implantação é cobrada por câmera.</p></div>
+<div class="row g-4 justify-content-center mt-4">
+<div class="col-lg-5 reveal">
+<article class="plan-card h-100">
+<div class="plan-top"><span>ESSENCIAL</span><b>5 GB</b></div>
+<h3>Para acompanhamento de eventos e consultas pontuais</h3>
+<div class="price"><small>R$</small><strong>167,90</strong><span>/veículo por mês</span></div>
+<ul><li><svg><use href="#icon-check"></use></svg>Câmera PontoCam Light em comodato</li><li><svg><use href="#icon-check"></use></svg>Acesso à plataforma PontoCam</li><li><svg><use href="#icon-check"></use></svg>Plano 4G de 5 GB - TIM ou Vivo</li><li><svg><use href="#icon-check"></use></svg>Streaming sob demanda e gestão de eventos</li></ul>
+<a class="btn btn-outline-brand w-100" data-plan="Essencial 5 GB" href="#contato">Quero este plano</a>
+</article>
+</div>
+<div class="col-lg-5 reveal reveal-delay">
+<article class="plan-card featured h-100"><div class="recommended">MAIOR FRANQUIA</div>
+<div class="plan-top"><span>PROFISSIONAL</span><b>10 GB</b></div>
+<h3>Para operações com maior frequência de consultas e downloads</h3>
+<div class="price"><small>R$</small><strong>197,90</strong><span>/veículo por mês</span></div>
+<ul><li><svg><use href="#icon-check"></use></svg>Câmera PontoCam Light em comodato</li><li><svg><use href="#icon-check"></use></svg>Acesso à plataforma PontoCam</li><li><svg><use href="#icon-check"></use></svg>Plano 4G de 10 GB - TIM ou Vivo</li><li><svg><use href="#icon-check"></use></svg>Mais disponibilidade para vídeo e evidências</li></ul>
+<a class="btn btn-brand w-100" data-plan="Profissional 10 GB" href="#contato">Quero este plano</a>
+</article>
+</div>
+</div>
+<div class="implantation reveal"><div><span>Implantação e instalação técnica</span><b>R$ 297,90 <small>por câmera</small></b></div><p>Inclui ativação, cadastro do veículo, configuração, calibração e testes. Deslocamentos fora da área padrão podem ser orçados separadamente.</p></div>
+<div class="estimate-box reveal">
+<div class="row align-items-end gy-3">
+<div class="col-lg-4"><label class="form-label" for="fleetSize">Quantidade de veículos</label><input class="form-control form-control-lg" id="fleetSize" max="999" min="1" type="number" value="10"/></div>
+<div class="col-lg-4"><label class="form-label" for="planSelect">Plano desejado</label><select class="form-select form-select-lg" id="planSelect"><option value="167.90">Essencial - 5 GB</option><option value="197.90">Profissional - 10 GB</option></select></div>
+<div class="col-lg-4"><div class="estimate-result"><small>Estimativa inicial</small><b id="monthlyEstimate">R$ 1.679,00/mês</b><span id="setupEstimate">Implantação: R$ 2.979,00</span></div></div>
+</div>
+<p class="estimate-note">Estimativa comercial sem impostos adicionais, deslocamentos especiais ou itens opcionais. Valores e condições sujeitos à análise e proposta formal.</p>
+</div>
+<div class="plan-notes reveal"><p><b>Uso de dados:</b> transmissão ao vivo, playback remoto e downloads consomem a franquia contratada. A disponibilidade e a qualidade dependem da cobertura móvel.</p><p><b>Gravação local:</b> requer cartão microSD homologado, dimensionado e fornecido conforme a proposta comercial.</p></div>
+</div>
+</section>
+<div class="source-design"><section class="alt-applications-section" id="aplicacoes">
+<div class="container">
+<div class="alt-section-heading text-center reveal">
+<span class="alt-section-kicker">Feita para operações em movimento</span>
+<h2>Onde a PontoCam faz diferença</h2>
+</div>
+<div class="alt-applications-grid mt-5">
+<article class="alt-application-card reveal">
+<span class="alt-application-icon"><i class="bi bi-box-seam"></i></span>
+<h3>Entregas e logística</h3>
+<p>Mais evidência e controle em cada rota.</p>
+</article>
+<article class="alt-application-card reveal reveal-delay-1">
+<span class="alt-application-icon"><i class="bi bi-wrench-adjustable"></i></span>
+<h3>Equipes externas</h3>
+<p>Acompanhe deslocamentos e atendimentos.</p>
+</article>
+<article class="alt-application-card reveal reveal-delay-2">
+<span class="alt-application-icon"><i class="bi bi-people"></i></span>
+<h3>Transporte de passageiros</h3>
+<p>Mais segurança dentro e fora do veículo.</p>
+</article>
+<article class="alt-application-card reveal reveal-delay-3">
+<span class="alt-application-icon"><i class="bi bi-buildings"></i></span>
+<h3>Frotas corporativas</h3>
+<p>Gestão simples para veículos da empresa.</p>
+</article>
+</div>
+<div class="alt-numbers-bar reveal">
+<div><strong>2</strong><span>câmeras integradas</span></div>
+<div><strong>4G</strong><span>conectividade móvel</span></div>
+<div><strong>1</strong><span>plataforma central</span></div>
+<div><strong>24h</strong><span>operação acompanhada</span></div>
+</div>
+</div>
+</section></div>
+<section class="section-space faq-section" id="duvidas">
+<div class="container">
+<div class="row gy-5">
+<div class="col-lg-5 reveal"><span class="section-kicker">Perguntas frequentes</span><h2>Informações claras antes de colocar a frota em operação</h2><p class="section-intro">Reunimos as principais dúvidas sobre câmera, conectividade, gravação e planos.</p><a class="text-link" href="assets/docs/PontoCam_Light_FAQ.pdf" rel="noopener" target="_blank">Baixar FAQ completo <svg><use href="#icon-arrow"></use></svg></a></div>
+<div class="col-lg-7 reveal reveal-delay">
+<div class="accordion accordion-flush" id="faqAccordion">
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">A câmera grava quando perde o sinal 4G?</button></h3><div class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" id="faq1"><div class="accordion-body">Sim. Com cartão microSD instalado e a gravação configurada, o vídeo continua sendo armazenado localmente. A transmissão ao vivo e o envio à plataforma dependem da conectividade.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">O que consome a franquia de dados?</button></h3><div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq2"><div class="accordion-body">Principalmente visualização ao vivo, downloads e solicitações remotas de vídeo. O consumo varia conforme resolução, duração das sessões e quantidade de eventos.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">A solução possui câmera frontal e interna?</button></h3><div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq3"><div class="accordion-body">Sim. A PontoCam Light possui dois canais: câmera frontal e câmera voltada para a cabine, com infravermelho para o ambiente interno.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">É possível baixar vídeos para usar como evidência?</button></h3><div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq4"><div class="accordion-body">Sim. A plataforma permite playback, visualização e download de vídeos, conforme a disponibilidade da gravação e as regras do serviço contratado.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#faq5" data-bs-toggle="collapse" type="button">O equipamento é comprado ou fica em comodato?</button></h3><div class="accordion-collapse collapse" data-bs-parent="#faqAccordion" id="faq5"><div class="accordion-body">Nos planos apresentados, a câmera é disponibilizada em comodato durante a vigência contratual, conforme as condições da proposta e do contrato.</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contato">
+<div class="contact-pattern"></div>
+<div class="container position-relative">
+<div class="row gy-5 align-items-center">
+<div class="col-lg-5 reveal"><span class="section-kicker light">Vamos falar sobre sua frota?</span><h2 class="text-white">Receba uma proposta alinhada à sua operação</h2><p class="text-white-50 fs-5">Conte quantos veículos você possui e como pretende utilizar os vídeos. Nossa equipe ajudará a definir o plano mais adequado.</p><div class="contact-direct"><a href="tel:+551141262929"><svg><use href="#icon-phone"></use></svg><span><small>Telefone</small><b>11 4126-2929</b></span></a><a href="mailto:comercial@realponto.com.br"><svg><use href="#icon-mail"></use></svg><span><small>E-mail</small><b>comercial@realponto.com.br</b></span></a></div></div>
+<div class="col-lg-7 reveal reveal-delay">
+<form class="lead-form" id="leadForm" novalidate="">
+<div class="row g-3">
+<div class="col-md-6"><label class="form-label" for="name">Nome</label><input class="form-control" id="name" required="" type="text"/><div class="invalid-feedback">Informe seu nome.</div></div>
+<div class="col-md-6"><label class="form-label" for="company">Empresa</label><input class="form-control" id="company" required="" type="text"/><div class="invalid-feedback">Informe a empresa.</div></div>
+<div class="col-md-6"><label class="form-label" for="email">E-mail</label><input class="form-control" id="email" required="" type="email"/><div class="invalid-feedback">Informe um e-mail válido.</div></div>
+<div class="col-md-6"><label class="form-label" for="phone">Telefone</label><input class="form-control" id="phone" placeholder="(11) 00000-0000" required="" type="tel"/><div class="invalid-feedback">Informe um telefone.</div></div>
+<div class="col-md-6"><label class="form-label" for="vehicles">Quantidade de veículos</label><input class="form-control" id="vehicles" min="1" required="" type="number"/><div class="invalid-feedback">Informe a quantidade.</div></div>
+<div class="col-md-6"><label class="form-label" for="interest">Interesse</label><select class="form-select" id="interest"><option>Quero uma demonstração</option><option>Plano Essencial - 5 GB</option><option>Plano Profissional - 10 GB</option><option>Projeto para frota maior</option></select></div>
+<div class="col-12"><label class="form-label" for="message">Conte um pouco sobre a operação</label><textarea class="form-control" id="message" placeholder="Tipo de veículo, cidade, frequência de uso de vídeo ao vivo..." rows="4"></textarea></div>
+<div class="col-12"><button class="btn btn-brand btn-lg w-100" type="submit">Enviar solicitação <svg><use href="#icon-arrow"></use></svg></button></div>
+<div class="col-12"><p class="form-note">Ao enviar, seu aplicativo de e-mail será aberto com as informações preenchidas. Para envio automático pelo site, conecte o formulário a um serviço de formulários ou ao backend da empresa.</p></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container"><div class="row gy-4 align-items-center"><div class="col-lg-4"><img alt="PontoCam - Monitoramento Veicular e Telemetria" src="assets/img/logo-pontocam-full.png"/><p>Uma empresa do Grupo RealPonto.</p></div><div class="col-lg-4"><nav aria-label="Links do rodapé"><a href="#solucao">Solução</a><a href="#plataforma">Plataforma</a><a href="#planos">Planos</a><a href="#aplicacoes">Aplicações</a><a href="#contato">Contato</a></nav></div><div class="col-lg-4 text-lg-end"><p><b>www.pontocam.com.br</b><br/>11 4126-2929<br/>comercial@realponto.com.br</p></div></div><div class="footer-bottom"><span>© 2026 PontoCam / Grupo RealPonto. Todos os direitos reservados.</span><span>Videotelemetria • Monitoramento veicular • Gestão de frotas</span></div></div>
+</footer>
+<a aria-label="Ligar para PontoCam" class="floating-contact" href="tel:+551141262929"><svg><use href="#icon-phone"></use></svg><span>Falar com a PontoCam</span></a>
+<div class="mobile-cta"><a href="#contato">Solicitar demonstração</a></div>
+<script crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/bootstrap-fallback.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
