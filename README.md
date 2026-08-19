@@ -5,8 +5,11 @@ Landing page estática, responsiva e pronta para GitHub Pages.
 ## Estrutura
 
 - `index.html`: página principal.
-- `assets/css/style.css`: identidade visual e responsividade.
+- `faq.html`: página interativa com as 30 perguntas e respostas da PontoCam Light.
+- `assets/css/style.css`: identidade visual e responsividade geral.
+- `assets/css/faq.css`: estilos exclusivos da página de FAQ.
 - `assets/js/main.js`: animações, simulador de valores e formulário por e-mail.
+- `assets/js/faq.js`: busca e filtros da página de FAQ.
 - `assets/img/`: logotipo, imagem original da PontoCam Light e imagem para compartilhamento.
 - `assets/docs/`: ficha técnica, FAQ e material técnico completo em PDF.
 
@@ -44,3 +47,7 @@ Esta versão mantém como base o projeto **Landing_Page_PontoCam_Bootstrap** e i
 - seção **Feita para operações em movimento** no lugar de **Para diferentes operações**.
 
 Os estilos importados ficam isolados em `assets/css/imported-sections.css` para não alterar as demais seções do site.
+
+## Página de FAQ
+
+O botão da seção da câmera e o link da área de dúvidas agora abrem `faq.html`, mantendo o visitante dentro da experiência do site. A página reúne as 30 perguntas do documento oficial, organizadas em seis categorias, com busca instantânea e respostas em accordion.

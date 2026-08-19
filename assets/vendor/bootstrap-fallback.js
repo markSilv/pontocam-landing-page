@@ -2,7 +2,36 @@
   'use strict';
   if (window.bootstrap) return;
 
-  const setExpanded = (button, expanded) => button?.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  const triggerFor = (element) => document.querySelector(`[data-bs-target="#${element.id}"]`);
+
+  const setState = (element, expanded) => {
+    element.classList.toggle('show', expanded);
+    const button = triggerFor(element);
+    button?.classList.toggle('collapsed', !expanded);
+    button?.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  };
+
+  const closeSiblings = (element) => {
+    const parentSelector = element.getAttribute('data-bs-parent');
+    if (!parentSelector) return;
+    document.querySelectorAll(`${parentSelector} .accordion-collapse.show`).forEach((open) => {
+      if (open !== element) setState(open, false);
+    });
+  };
+
+  const instanceFor = (element) => ({
+    show() {
+      closeSiblings(element);
+      setState(element, true);
+    },
+    hide() {
+      setState(element, false);
+    },
+    toggle() {
+      if (element.classList.contains('show')) this.hide();
+      else this.show();
+    }
+  });
 
   document.addEventListener('click', (event) => {
     const trigger = event.target.closest('[data-bs-toggle="collapse"]');
@@ -12,34 +41,13 @@
     const target = document.querySelector(selector);
     if (!target) return;
     event.preventDefault();
-
-    const parentSelector = target.getAttribute('data-bs-parent');
-    if (parentSelector) {
-      document.querySelectorAll(`${parentSelector} .accordion-collapse.show`).forEach((open) => {
-        if (open !== target) {
-          open.classList.remove('show');
-          const btn = document.querySelector(`[data-bs-target="#${open.id}"]`);
-          btn?.classList.add('collapsed');
-          setExpanded(btn, false);
-        }
-      });
-    }
-
-    const willOpen = !target.classList.contains('show');
-    target.classList.toggle('show', willOpen);
-    trigger.classList.toggle('collapsed', !willOpen);
-    setExpanded(trigger, willOpen);
+    instanceFor(target).toggle();
   });
 
   window.bootstrap = {
     Collapse: {
       getOrCreateInstance(element) {
-        return {
-          hide() {
-            element.classList.remove('show');
-            document.querySelector(`[data-bs-target="#${element.id}"]`)?.setAttribute('aria-expanded', 'false');
-          }
-        };
+        return instanceFor(element);
       }
     }
   };
